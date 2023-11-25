@@ -56,16 +56,6 @@
         $(this).css('background-color', '#007bff');
         $(this).css('border-color', '#007bff');
       });
-
-      // Design dialogs to yield closure
-      $('a').click(function(event) {
-        event.preventDefault();
-        var href = $(this).attr('href');
-        var dialog = $('<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>');
-        dialog.append('<div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="myModalLabel">Navigating to ' + href + '</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">Are you sure you want to navigate to ' + href + '?<br>This will open a new tab.</div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button><a href="' + href + '" class="btn btn-primary">Yes, I\'m sure</a></div></div></div>');
-        $('body').append(dialog);
-        dialog.modal('show');
-      });
     });
   </script>
 </body>
