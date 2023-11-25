@@ -52,6 +52,9 @@ text-align:  center;
 
 @media (min-width: 1200px) {}
 
+a:hover {
+        text-decoration: underline;
+    }
    </style>
 
 <body>
@@ -111,4 +114,10 @@ text-align:  center;
                      Telegram
                   </a>
                 </div>
-</body>
+      <script>
+       
+           $(document).ready(function () {
+                      
+          $('a[target="_blank"]').attr('title', 'Opens in a new tab');
+                });
+       </script>         
